@@ -12,13 +12,13 @@ S=[("tapeo","Tapeo",None,[
 ("Entrecot de ternera (300 g)","",20),("Chuletillas de ternasco a la plancha","",16),
 ("Pechuga de pollo a la plancha con guarnición","",13),("Bacalao a la vizcaína con guarnición","",15)]),
 ("ninos","Para niños",None,[("Alitas de pollo con patatas fritas","",7.5),("Nuggets de pollo con patatas fritas","",7.5),
-("Tortilla francesa con patatas","",7),("Meteoritos de pollo con kétchup","",9)]),
+("Tortilla francesa con patatas","",7)]),
 ("ensaladas","Ensaladas de la casa",None,[
 ("Ensalada mixta grande para compartir (4 personas)","Lechuga, tomate, cebolla, zanahoria, remolacha, olivas, espárragos blancos",13),
 ("Ensalada de queso de rulo (100%)","Con mermelada de tomate, frutos secos y cebolla frita",13),
 ("Ensalada mixta de la casa con atún y olivas","",10),("Espárragos blancos con jamón serrano y mayonesa","",11)]),
 ("postres","Postres de la casa",None,[("Profiteroles rellenos de nata","",4.5),("Coulant de chocolate con helado de vainilla","",5.5),
-("Flan de queso curado con nata y caramelo","",4.5),("Tarta de queso casera con sirope de frutos rojos","",5.5)])]
+("Flan de queso curado con nata y caramelo","",4.5)])]
 p=lambda x:f"{x:.2f}".replace(".",",")+"&nbsp;€"
 CSS='''
 :root{--g:#d9822b;--au:#d9822b;--br:#2b1d14;--ink:#2b2b2b;--mut:#7a7a7a;--bg:#fbfaf7;--ln:#e6e1d6}
