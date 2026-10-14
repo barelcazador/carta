@@ -50,6 +50,10 @@ body.dark{background:#0e0b09;color:#f3ead2}body.dark header h1{color:#f3ead2}bod
 body.dark .menu a{background:transparent;color:#f3ead2;border-color:#d9822b}body.dark .menu a:active{background:#d9822b33}
 body.dark .res p{color:#f3ead2}body.dark .res a.ig{color:#f3ead2;border-color:#d9822b}body.dark .res a.ig b{color:#e8964a}
 body.dark .igqr{background:#fff;border-radius:14px;padding:10px}
+.igb{display:inline-flex;align-items:center;justify-content:center;border-radius:50%;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%);text-decoration:none}
+.res a.igb{display:inline-flex;border-radius:50%;width:56px;height:56px;padding:0;margin-top:22px;background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
+.igh{display:block;margin:6px 0 0;font-size:.85rem;color:#e8964a;text-decoration:none}.res a.igh{display:block;margin-top:6px;background:none;padding:0;color:#e8964a;font-size:.85rem;letter-spacing:.02em}
+.sf{display:flex;align-items:center;justify-content:center;gap:12px;margin:26px 0 0}.sf .tel{margin:0}.sf .igb{width:34px;height:34px}
 footer{text-align:center;padding:32px 16px 40px;font-size:.72rem;letter-spacing:.1em;color:var(--mut)}
 '''
 def page(title,inner,cls=''):
@@ -57,11 +61,11 @@ def page(title,inner,cls=''):
 <title>{title}</title><meta name="theme-color" content="#1f3d2b"><style>{CSS}</style></head><body class="{cls}"><div class="wrap">{inner}<footer>Bar El Cazador · Villel (Teruel)</footer></div></body></html>'''
 btns="".join(f'<a href="{i}.html">{t}</a>' for i,t,_,_ in S)
 open("index.html","w").write(page("Carta · Bar El Cazador · Villel",
- f'<header><img src="logo.png" alt="Bar El Cazador · Villel"><h1>Bar El Cazador</h1><p>VILLEL · TERUEL</p></header><nav class="menu">{btns}</nav><div class="res"><p>Reservas</p><a href="tel:+34978092531">&#9742;&nbsp; 978 09 25 31</a><br><a class="ig" href="https://www.instagram.com/barelcazadorvillel/" target="_blank" rel="noopener">Instagram <b>@barelcazadorvillel</b></a><a class="qrl" href="https://www.instagram.com/barelcazadorvillel/" target="_blank" rel="noopener"><img class="igqr" src="instagram_qr.png" alt="QR Instagram @barelcazadorvillel"></a></div>',"dark"))
+ f'<header><img src="logo.png" alt="Bar El Cazador · Villel"><h1>Bar El Cazador</h1><p>VILLEL · TERUEL</p></header><nav class="menu">{btns}</nav><div class="res"><p>Reservas</p><a href="tel:+34978092531">&#9742;&nbsp; 978 09 25 31</a><br><a class="igb" href="https://www.instagram.com/barelcazadorvillel/" target="_blank" rel="noopener" aria-label="Instagram @barelcazadorvillel"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="#fff"/></svg></a><a class="igh" href="https://www.instagram.com/barelcazadorvillel/" target="_blank" rel="noopener">@barelcazadorvillel</a><a class="qrl" href="https://www.instagram.com/barelcazadorvillel/" target="_blank" rel="noopener"><img class="igqr" src="instagram_qr.png" alt="QR Instagram @barelcazadorvillel"></a></div>',"dark"))
 for i,t,n,items in S:
   b=f'<header class="small"><a href="index.html"><img src="logo.png" alt="Bar El Cazador"></a></header><a class="back" href="index.html">← Volver a la carta</a><section><h2>{t}</h2><div class="div"><span>✦</span></div>'
   if n: b+=f'<p class="note">{n}</p>'
   for a,d,pr in items:
     b+=f'<div class="item"><div class="row"><span class="name">{a}</span><span class="dots"></span><span class="price">{p(pr)}</span></div>'+(f'<p class="desc">{d}</p>' if d else '')+'</div>'
-  b+='</section><a class="back" href="index.html">← Volver a la carta</a><a class="tel" href="tel:+34978092531">Reservas: <b>978 09 25 31</b></a><a class="tel" style="margin-top:8px" href="https://www.instagram.com/barelcazadorvillel/" target="_blank" rel="noopener">Instagram <b>@barelcazadorvillel</b></a>'
+  b+='</section><a class="back" href="index.html">← Volver a la carta</a><div class="sf"><a class="tel" href="tel:+34978092531">Reservas: <b>978 09 25 31</b></a><a class="igb" href="https://www.instagram.com/barelcazadorvillel/" target="_blank" rel="noopener" aria-label="Instagram @barelcazadorvillel"><svg viewBox="0 0 24 24" width="19" height="19" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="#fff" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="#fff" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="#fff"/></svg></a></div>'
   open(f"{i}.html","w").write(page(f"{t} · Bar El Cazador",b))
