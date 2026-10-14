@@ -1,13 +1,12 @@
 S=[("tapeo","Tapeo",None,[
-("Patatas Bravas de la casa","",7),("Morro de cerdo frito","",8.5),("Oreja de cerdo frita","",8.5),("Rabo de cerdo frito","",9),
+("Patatas Bravas de la casa","",7),("Huevos rotos con jamón serrano y ajo perejil (Mery)","",11),("Morro de cerdo frito","",8.5),("Oreja de cerdo frita","",8.5),("Rabo de cerdo frito","",9),
 ("Albóndigas de la casa en salsa de tomate","",10),("Calamares a la romana","",12),("Boquerones rebozados","",11),
 ("Sepia a la plancha con Mery","",14),("Alitas de pollo a la barbacoa","",9.5),("Croquetón de jamón o bacalao","",2),
-("Croquetón de carabineros","",2.8),("Croquetón de boletus con salsa roquefort (und.)","",2.5),
-("Delicias de morcilla rellenas de cebolla caramelizada","",2),("Croquetas de cecina (und.)","",1.5),
+("Croquetón de boletus con salsa roquefort (und.)","",2.5),
+("Delicias de morcilla rellenas de cebolla caramelizada","",2),
 ("Queso fresco en tempura con mermelada de tomate","",9.5),("Medallones de rulo fritos con mermelada de tomate","",9.5),
 ("Lechecillas de cordero rebozadas al ajillo","",13),
-("Delicias de Teruel","Pan tostado, jamón de Teruel, tomate natural, aceite de oliva",14),
-("Huevos rotos con jamón serrano y ajo perejil (Mery)","",11)]),
+("Delicias de Teruel","Pan tostado, jamón de Teruel, tomate natural, aceite de oliva",14)]),
 ("platos","Platos","Acompañado de patatas y verduras · Guarnición extra 2,00 €",[
 ("Rabo de toro a la andaluza con guarnición","",18),("Manitas de cerdo en salsa de almendras","",15),
 ("Entrecot de ternera (300 g)","",20),("Chuletillas de ternasco a la plancha","",16),
